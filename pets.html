@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Pets </title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+
+<style> 
+.navbar a {
+    color: #D291BC;
+    font-size: 20;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body{ 
+background-image: url("resource/image/simple_bg.jpg"); 
+} 
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color:#614051 ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #614051;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#614051 ;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:#614051 ;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div class= "header">
+<img src="resource/image/logo1.png" style="width: 115px" align="center">
+<hI style ="font-family: Times New Roman; font-size: 60px; style: bold;"> FURRY FAMILY HEAVEN  </hI>
+</div> 
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href= "about_us.html"> About Us </a> 
+   <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Pets</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="cat.html">Cat</a>
+      <a href="rabbit.html">Rabbit</a>
+      <a href="dog.html">Dog</a>
+      <a href="hamster.html">Hamster</a>
+      <a href="sugar_glider.html">Sugar Glider</a>
+      <a href="bird.html">Bird</a>
+    </div>
+  </div>
+  <a href= "adopt.html"> Adopt </a> 
+  <a href= "volunteer.html"> Volunteer </a>  
+  <a href= "essential.html"> Essential </a>
+  <a href= "donation.html"> Donation </a>
+  <a  href= "qna.html"> FAQs </a>
+  <a href= "contact.html"> Contact Us </a> 
+</div>
+
+ <img src="resource/image/h/header2.jpg"  width="100%">
+
+<br><br><br><br>
+
+<h3 style="font-size: 20px;">
+Adopting a pet is a wonderful way to bring joy into your home and provide a loving animal with a forever family. <br> Browse through the different types of animals available for adoption and find your new best friend today! <br> 🐱🐶🐰🐹🐦🐭 
+</h3>
+
+<br><br><br>
+
+<center>
+<a href="cat.html">
+    <img src="resource/image/cat_page.png" alt="cat page" style="width:80%">
+</a>
+
+<a href="dog.html">
+    <img src="resource/image/dog_page.png" alt="dog page" style="width:80%">
+</a>
+
+<a href="rabbit.html">
+    <img src="resource/image/rabbit_page.png" alt="rabbit page" style="width:80%">
+</a>
+
+<a href="bird.html">
+    <img src="resource/image/bird_page.png" alt="bird page" style="width:80%">
+</a>
+
+<a href="hamster.html">
+    <img src="resource/image/hamster_page.png" alt="hamster page" style="width:80%">
+</a>
+
+<a href="sugar_glider.html">
+    <img src="resource/image/sg_page.png" alt="sugar glider page" style="width:80%">
+</a>
+ 
+</center> 
+<footer>
+<div class="container1">
+  <div class="footer-content">
+   <img src="resource/image/logo.jpg" style="width: 250px">
+  </div>
+   
+
+   <div class="footer-content">
+  <h4> Contact Us </h4>
+    <p> Email: furryfamilyheaven@gmail.com </p>
+    <p> Phone: +60 10 663 2756 (thirah) </p>
+    <p> Address: 9, Jalan Jalil Jaya 7, Jalil Link, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur </p>
+   </div>
+
+   <div class="footer-content">
+  <h4> Follow Us </h4>
+ <a class="social-icon" href="http://www.facebook.com/furryfamily" target="_blank" rel="noopener noreferrer"> <ion-icon name="logo-facebook"></ion-icon></a>
+ <a class="social-icon" href="https://www.instagram.com/furryfamilyheaven?igsh=MW1xaXZ4bHk5bGhlMQ==" target="_blank" rel="noopener noreferrer">
+ <ion-icon name="logo-instagram"></ion-icon></a>
+ <a class="social-icon" href="https://www.tiktok.com/@yk2jjun?_t=8nV2nMOVOqI&_r=1" target="_blank" rel="noopener noreferrer">
+ <ion-icon name="logo-tiktok"></ion-icon></a>
+ <a class="social-icon" href="https://x.com/mar_dhiee?s=09" target="_blank" rel="noopener noreferrer">
+ <ion-icon name="logo-twitter"></ion-icon></a>
+   </div> 
+
+<div class="footer-bottom">
+        <p>&copy; 2024 Furry Family Heaven. <br> All Rights Reserved.</p>
+        <div id="last-updated"></div> <!-- New div for last updated timestamp -->
+    </div>
+</footer>
+
+<a href="#" class="back-to-top" style="color:  #D291BC;">
+<ion-icon name="caret-up-outline"></ion-icon>
+
+<script>
+    // JavaScript to set the current date and time
+    document.getElementById("last-updated").innerText = "Last Updated: " + new Date().toLocaleString();
+</script>
+
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+</body>
+</html>

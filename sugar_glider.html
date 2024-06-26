@@ -1,0 +1,212 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Sugar Glider </title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+
+<style> 
+.navbar a {
+    color: #D291BC;
+    font-size: 20;
+}
+body{ 
+background-image: url("resource/image/simple_bg.jpg"); 
+} 
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #614051;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#614051 ;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:#614051 ;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class= "header">
+<img src="resource/image/logo1.png" style="width: 115px" align="center">
+<hI style ="font-family: Times New Roman; font-size: 60px; style: bold;"> FURRY FAMILY HEAVEN  </hI>
+</div> 
+
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href= "about_us.html"> About Us </a> 
+  <div class="dropdown">
+    <button class="dropbtn">Pets 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cat.html">Cat</a>
+      <a href="rabbit.html">Rabbit</a>
+      <a href="dog.html">Dog</a>
+      <a href="hamster.html">Hamster</a>
+      <a href="sugar_glider.html">Sugar Glider</a>
+      <a href="bird.html">Bird</a>
+    </div>
+  </div>  
+
+  <a href= "adopt.html"> Adopt </a> 
+  <a href= "volunteer.html"> Volunteer </a>  
+  <a href= "essential.html"> Essential </a>
+  <a href= "donation.html"> Donation </a>
+  <a  href= "qna.html"> QnA </a>
+  <a href= "contact.html"> Contact Us </a> 
+</div>
+
+<br><br>
+<center>
+
+    <div class="pets-card" onclick="showDetails('Tomy', 'Petaurus Breviceps', 'Male', ' 30th April 2023', '<li>Friendly,very social and loves interacting with people.</li><li>Active,enjoys climbing and gliding around her enclosure</li>')">
+        <img src="resource/image/glider/sugar_1.jpeg"  id="img1">
+        <h3>TOMY</h3>
+        <p>More Details</p>
+    </div>
+
+    <div class="pets-card" onclick="showDetails('Poppy', 'Petaurus Breviceps', 'Male', '21th March 2023', '<li>Playful,loves playing with toys and engaging in activities</li><li>Energetic,full of energy and enjoys lots of exercises</li>')">
+        <img src="resource/image/glider/sugar_2.jpg" id="img2">
+        <h3>POPPY</h3>
+        <p>More Details</p>
+    </div>
+
+    <div class="pets-card" onclick="showDetails('Siti', 'Petaurus Breviceps', 'Female', '3rd July 2022', '<li>Inquisitive, always curious and interested in new things.</li><li>Affectionate, enjoys cuddling and bonding with her human companions.</li>')">
+        <img src="resource/image/glider/sugar_3.jpg"  id="img2">
+        <h3>SITI</h3>
+        <p>More Details</p>
+    </div>
+
+    <div class="pets-card" onclick="showDetails('Bella', 'Petaurus Breviceps', 'Female', '11th October 2023', '<li>Friendly and curious</li><li>Loves meeting new people</li><li>Gentle, has a calm and gentle demeanor, making her great for families.</li>')">
+        <img src="resource/image/glider/sugar_4.jpeg"  id="img2">
+        <h3>BELLA</h3>
+        <p>More Details</p>
+    </div>
+</center>
+
+<!-- Modal -->
+<div id="sugarglider-details-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h1 id="sugarglider-name"></h1>
+        <p id="sugarglider-breed"></p>
+        <p id="sugarglider-gender"></p>
+        <p id="sugarglider-birthday"></p>
+        <p><b><font face="Georgia Pro Black" color="Pink">Special Traits</p></b></font>
+        <ul id="sugarglider-characteristics"></ul>
+    </div>
+</div>
+
+<footer>
+<div class="container1">
+  <div class="footer-content">
+   <img src="resource/image/logo.jpg" style="width: 250px">
+  </div>
+   
+
+   <div class="footer-content">
+  <h4> Contact Us </h4>
+    <p> Email: furryfamilyheaven@gmail.com </p>
+    <p> Phone: +60 10 663 2756 (thirah) </p>
+    <p> Address: 9, Jalan Jalil Jaya 7, Jalil Link, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur </p>
+   </div>
+
+   <div class="footer-content">
+  <h4> Follow Us </h4>
+ <a class="social-icon" href="http://www.facebook.com/furryfamily" target="_blank" rel="noopener noreferrer"> <ion-icon name="logo-facebook"></ion-icon></a>
+ <a class="social-icon" href="https://www.instagram.com/furryfamilyheaven?igsh=MW1xaXZ4bHk5bGhlMQ==" target="_blank" rel="noopener noreferrer">
+ <ion-icon name="logo-instagram"></ion-icon></a>
+ <a class="social-icon" href="https://www.tiktok.com/@yk2jjun?_t=8nV2nMOVOqI&_r=1" target="_blank" rel="noopener noreferrer">
+ <ion-icon name="logo-tiktok"></ion-icon></a>
+ <a class="social-icon" href="https://x.com/mar_dhiee?s=09" target="_blank" rel="noopener noreferrer">
+ <ion-icon name="logo-twitter"></ion-icon></a>
+   </div> 
+
+<div class="footer-bottom">
+        <p>&copy; 2024 Furry Family Heaven. <br> All Rights Reserved.</p>
+        <div id="last-updated"></div> <!-- New div for last updated timestamp -->
+    </div>
+</footer>
+
+<a href="#" class="back-to-top" style="color:  #D291BC;">
+<ion-icon name="caret-up-outline"></ion-icon>
+
+<script>
+    // JavaScript to set the current date and time
+    document.getElementById("last-updated").innerText = "Last Updated: " + new Date().toLocaleString();
+</script>
+
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<script>
+    function showDetails(name, breed, gender, birthday, traits) {
+        document.getElementById('sugarglider-name').textContent = name;
+        document.getElementById('sugarglider-breed').textContent = 'Breed : ' + breed;
+        document.getElementById('sugarglider-gender').textContent = 'Gender : ' + gender;
+        document.getElementById('sugarglider-birthday').textContent = 'Birthday : ' + birthday;
+        document.getElementById('sugarglider-characteristics').innerHTML = traits;
+        document.getElementById('sugarglider-details-modal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('sugarglider-details-modal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        var modal = document.getElementById('hamster-details-modal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+  }
+  
+</script>
+
+
+
+</body>
+</html>
+
+
